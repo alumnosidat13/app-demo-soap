@@ -32,4 +32,11 @@ public class WebServiceConfig implements WsConfigurer {
         );
     }
 
+    @Bean
+    public XsdSchema promedioSchema(){
+        return new SimpleXsdSchema(
+                new ClassPathResource("xsd/promedio.xsd")
+        );
+    }
+
 }

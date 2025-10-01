@@ -39,7 +39,7 @@ tasks.register('xjc', JavaExec){
 	description = 'Generated JAXB classes'
 	mainClass = 'com.sun.tools.xjc.Driver'
 	classpath = configurations.xjc
-	args '-d', 'src/main/java', "${project.projectDir}/src/main/resources/xsd/operaciones.xsd"
+	args '-d', 'src/main/java', "${project.projectDir}/src/main/resources/xsd/promedio.xsd"
 }
 
 tasks.named('compileJava'){

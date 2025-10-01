@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://www.idat.edu.pe/ws/promedio"
+    targetNamespace="http://www.idat.edu.pe/ws/promedio"
+    elementFormDefault="qualified">
+    <!-- Mensaje de petición -->
+    <xs:element name="getPromedioRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ec1" type="xs:int" />
+                <xs:element name="ec2" type="xs:int" />
+                <xs:element name="ec3" type="xs:int" />
+                <xs:element name="pf" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- Mensaje de respuesta -->
+    <xs:element name="getPromedioResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valor" type="xs:double" />
+                <xs:element name="estado" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+</xs:schema>

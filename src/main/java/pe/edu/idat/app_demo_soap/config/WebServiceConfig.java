@@ -23,7 +23,7 @@ public class WebServiceConfig implements WsConfigurer {
          servlet.setApplicationContext(app);
          servlet.setTransformSchemaLocations(true);
          return new ServletRegistrationBean<>(servlet,
-                 "/ws/**");
+                 "/ws/*");
     }
     @Bean
     public XsdSchema operacionesSchema(){
